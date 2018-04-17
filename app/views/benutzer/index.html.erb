@@ -1,0 +1,8 @@
+<h1>Übersicht Benutzer</h1>
+
+<% @benutzers.each do |b| %>
+	<%= b.Nachname %>
+	<%= b.Vorname %>
+    <%= b.Geschlecht %>
+	<%= link_to 'Show', benutzer_path(@benutzer) %><br>
+<% end %>
